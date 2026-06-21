@@ -1,50 +1,46 @@
-# Welcome to your Expo app 👋
+# 🌌 Hava Durumu AI (Uzay Temalı)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bu proje, gücünü **Google Gemini AI** ve **Open-Meteo API**'sinden alan; bilimkurgu, uzay ve siberpunk esintileri taşıyan fütüristik bir hava durumu uygulamasıdır. Klasik, sıkıcı mavi/beyaz hava durumu uygulamalarının aksine, bu uygulama sana adeta bir **uzay gemisinin HUD (Heads Up Display)** ekranındaymışsın hissi verir! 🚀
 
-## Get started
+## 🚀 Özellikler
 
-1. Install dependencies
+*   **🤖 Sistem Analizi (AI Yorumlama):** Gemini AI hava durumunu basitçe "Yağmurlu" demek yerine; *"Yağmur döngüsü tespit edildi, kalkanlarınızı aktif edin"* veya *"Çekirdek erime riski: Aşırı sıcak"* gibi siberpunk terminolojilerle yorumlar.
+*   **🌌 Fütüristik Neon Tasarım:** Cam efektleri (Glassmorphism), neon camgöbeği (cyan) ve macenta parlamalar, derin uzay tonlarında karanlık mod arka planlar!
+*   **👗 Akıllı Donanım ve Simülasyon Önerileri:** O anki hava durumuna uygun giysi ("Termal Zırh", "Optik Filtre") ve aktivite önerileri sunar.
+*   **🌍 Gezegen İçi Navigasyon:** İster bulunduğun konumu GPS üzerinden çek, ister dünyanın herhangi bir şehrini ara ve favorilerine kaydet!
+*   **⚡ Hızlı ve Güçlü:** Expo, React Native ve TypeScript kullanılarak geliştirilmiş olup, iOS, Android ve Web platformlarında kusursuz çalışır.
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Kurulum ve Çalıştırma
 
-2. Start the app
+Projeyi kendi yerel (local) ortamında çalıştırmak için aşağıdaki adımları takip et.
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Depoyu Klonla
 ```bash
-npm run reset-project
+git clone https://github.com/Oremine720/hava-durumu-ai.git
+cd hava-durumu-ai
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Gerekli Paketleri Yükle
+```bash
+npm install
+```
 
-## Learn more
+### 3. Çevresel Değişkenleri Ayarla (.env)
+Proje kök dizinine bir `.env` dosyası oluştur ve Gemini AI API anahtarını ekle:
+```env
+EXPO_PUBLIC_GEMINI_API_KEY=senin_api_anahtarin_buraya
+```
+*(Güvenliğin için `.env` dosyası `.gitignore` kuralları ile engellenmiştir ve Github'a asla yüklenmez!)*
 
-To learn more about developing your project with Expo, look at the following resources:
+### 4. Simülasyonu Başlat
+```bash
+npm start
+```
+Terminal ekranında çıkan karekodu **Expo Go** uygulaması ile (iOS veya Android) okutabilir, ya da `w` tuşuna basarak uygulamanın Web versiyonunu tarayıcında inceleyebilirsin!
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## 📸 Ekran Görüntüleri
+*(Buraya uygulamanın ekran görüntülerini yükleyebilirsin. Örneğin; neon detayları gösteren ana sayfa vb.)*
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+> **Uyarı:** Bu yazılım deneysel bir simülasyon sistemidir. Dış mekan görevlerine (sokağa) çıkmadan önce AI uyarılarını dikkatlice okuyunuz! 👾
